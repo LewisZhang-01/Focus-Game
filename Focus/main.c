@@ -5,7 +5,7 @@
 #include <stdio.h>
 
 #include "input_output.h"
-
+#include "game_run.h"
 
 int main() {
 
@@ -13,10 +13,14 @@ int main() {
     player players[PLAYERS_NUM];
     square board[BOARD_SIZE][BOARD_SIZE];
 
+
     initialize_players(players);
 
     initialize_board(board);
 
     print_board(board);
+    print_number_of_pieces(board);
+
+    turn();
     return 0;
 }

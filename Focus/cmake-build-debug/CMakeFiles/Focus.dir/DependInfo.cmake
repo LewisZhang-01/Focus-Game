@@ -4,9 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/lewiszhang/Library/Mobile Documents/com~apple~CloudDocs/UCD/CSSA Computer Science/COMP10050 Software Engineering Project 1 2019-2020/Assignment 2/Week8/Focus/game_init.c" "/Users/lewiszhang/Library/Mobile Documents/com~apple~CloudDocs/UCD/CSSA Computer Science/COMP10050 Software Engineering Project 1 2019-2020/Assignment 2/Week8/Focus/cmake-build-debug/CMakeFiles/Focus.dir/game_init.c.o"
-  "/Users/lewiszhang/Library/Mobile Documents/com~apple~CloudDocs/UCD/CSSA Computer Science/COMP10050 Software Engineering Project 1 2019-2020/Assignment 2/Week8/Focus/input_output.c" "/Users/lewiszhang/Library/Mobile Documents/com~apple~CloudDocs/UCD/CSSA Computer Science/COMP10050 Software Engineering Project 1 2019-2020/Assignment 2/Week8/Focus/cmake-build-debug/CMakeFiles/Focus.dir/input_output.c.o"
-  "/Users/lewiszhang/Library/Mobile Documents/com~apple~CloudDocs/UCD/CSSA Computer Science/COMP10050 Software Engineering Project 1 2019-2020/Assignment 2/Week8/Focus/main.c" "/Users/lewiszhang/Library/Mobile Documents/com~apple~CloudDocs/UCD/CSSA Computer Science/COMP10050 Software Engineering Project 1 2019-2020/Assignment 2/Week8/Focus/cmake-build-debug/CMakeFiles/Focus.dir/main.c.o"
+  "/Users/lewiszhang/Documents/COMP10050/Focus/game_init.c" "/Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug/CMakeFiles/Focus.dir/game_init.c.o"
+  "/Users/lewiszhang/Documents/COMP10050/Focus/game_run.c" "/Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug/CMakeFiles/Focus.dir/game_run.c.o"
+  "/Users/lewiszhang/Documents/COMP10050/Focus/input_output.c" "/Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug/CMakeFiles/Focus.dir/input_output.c.o"
+  "/Users/lewiszhang/Documents/COMP10050/Focus/main.c" "/Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug/CMakeFiles/Focus.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

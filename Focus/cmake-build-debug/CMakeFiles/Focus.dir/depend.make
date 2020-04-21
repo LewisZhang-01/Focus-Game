@@ -3,12 +3,17 @@
 
 CMakeFiles/Focus.dir/game_init.c.o: ../game_init.c
 CMakeFiles/Focus.dir/game_init.c.o: ../game_init.h
+CMakeFiles/Focus.dir/game_init.c.o: ../game_run.h
+
+CMakeFiles/Focus.dir/game_run.c.o: ../game_run.c
+CMakeFiles/Focus.dir/game_run.c.o: ../game_run.h
 
 CMakeFiles/Focus.dir/input_output.c.o: ../game_init.h
 CMakeFiles/Focus.dir/input_output.c.o: ../input_output.c
 CMakeFiles/Focus.dir/input_output.c.o: ../input_output.h
 
 CMakeFiles/Focus.dir/main.c.o: ../game_init.h
+CMakeFiles/Focus.dir/main.c.o: ../game_run.h
 CMakeFiles/Focus.dir/main.c.o: ../input_output.h
 CMakeFiles/Focus.dir/main.c.o: ../main.c
 

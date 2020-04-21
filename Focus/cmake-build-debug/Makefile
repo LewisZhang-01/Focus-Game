@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/lewiszhang/Library/Mobile Documents/com~apple~CloudDocs/UCD/CSSA Computer Science/COMP10050 Software Engineering Project 1 2019-2020/Assignment 2/Week8/Focus"
+CMAKE_SOURCE_DIR = /Users/lewiszhang/Documents/COMP10050/Focus
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/lewiszhang/Library/Mobile Documents/com~apple~CloudDocs/UCD/CSSA Computer Science/COMP10050 Software Engineering Project 1 2019-2020/Assignment 2/Week8/Focus/cmake-build-debug"
+CMAKE_BINARY_DIR = /Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/lewiszhang/Library/Mobile Documents/com~apple~CloudDocs/UCD/CSSA Computer Science/COMP10050 Software Engineering Project 1 2019-2020/Assignment 2/Week8/Focus/cmake-build-debug/CMakeFiles" "/Users/lewiszhang/Library/Mobile Documents/com~apple~CloudDocs/UCD/CSSA Computer Science/COMP10050 Software Engineering Project 1 2019-2020/Assignment 2/Week8/Focus/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug/CMakeFiles /Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/lewiszhang/Library/Mobile Documents/com~apple~CloudDocs/UCD/CSSA Computer Science/COMP10050 Software Engineering Project 1 2019-2020/Assignment 2/Week8/Focus/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -150,6 +150,33 @@ game_init.c.s:
 	$(MAKE) -f CMakeFiles/Focus.dir/build.make CMakeFiles/Focus.dir/game_init.c.s
 .PHONY : game_init.c.s
 
+game_run.o: game_run.c.o
+
+.PHONY : game_run.o
+
+# target to build an object file
+game_run.c.o:
+	$(MAKE) -f CMakeFiles/Focus.dir/build.make CMakeFiles/Focus.dir/game_run.c.o
+.PHONY : game_run.c.o
+
+game_run.i: game_run.c.i
+
+.PHONY : game_run.i
+
+# target to preprocess a source file
+game_run.c.i:
+	$(MAKE) -f CMakeFiles/Focus.dir/build.make CMakeFiles/Focus.dir/game_run.c.i
+.PHONY : game_run.c.i
+
+game_run.s: game_run.c.s
+
+.PHONY : game_run.s
+
+# target to generate assembly for a file
+game_run.c.s:
+	$(MAKE) -f CMakeFiles/Focus.dir/build.make CMakeFiles/Focus.dir/game_run.c.s
+.PHONY : game_run.c.s
+
 input_output.o: input_output.c.o
 
 .PHONY : input_output.o
@@ -216,6 +243,9 @@ help:
 	@echo "... game_init.o"
 	@echo "... game_init.i"
 	@echo "... game_init.s"
+	@echo "... game_run.o"
+	@echo "... game_run.i"
+	@echo "... game_run.s"
 	@echo "... input_output.o"
 	@echo "... input_output.i"
 	@echo "... input_output.s"

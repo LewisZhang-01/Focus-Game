@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/lewiszhang/Library/Mobile Documents/com~apple~CloudDocs/UCD/CSSA Computer Science/COMP10050 Software Engineering Project 1 2019-2020/Assignment 2/Week8/Focus/cmake-build-debug"/>
+				<Option working_dir="/Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Library/Mobile\ Documents/com~apple~CloudDocs/UCD/CSSA\ Computer\ Science/COMP10050\ Software\ Engineering\ Project\ 1\ 2019-2020/Assignment\ 2/Week8/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Library/Mobile\ Documents/com~apple~CloudDocs/UCD/CSSA\ Computer\ Science/COMP10050\ Software\ Engineering\ Project\ 1\ 2019-2020/Assignment\ 2/Week8/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Library/Mobile\ Documents/com~apple~CloudDocs/UCD/CSSA\ Computer\ Science/COMP10050\ Software\ Engineering\ Project\ 1\ 2019-2020/Assignment\ 2/Week8/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Library/Mobile\ Documents/com~apple~CloudDocs/UCD/CSSA\ Computer\ Science/COMP10050\ Software\ Engineering\ Project\ 1\ 2019-2020/Assignment\ 2/Week8/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/lewiszhang/Library/Mobile Documents/com~apple~CloudDocs/UCD/CSSA Computer Science/COMP10050 Software Engineering Project 1 2019-2020/Assignment 2/Week8/Focus/cmake-build-debug"/>
+				<Option working_dir="/Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Library/Mobile\ Documents/com~apple~CloudDocs/UCD/CSSA\ Computer\ Science/COMP10050\ Software\ Engineering\ Project\ 1\ 2019-2020/Assignment\ 2/Week8/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Library/Mobile\ Documents/com~apple~CloudDocs/UCD/CSSA\ Computer\ Science/COMP10050\ Software\ Engineering\ Project\ 1\ 2019-2020/Assignment\ 2/Week8/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Library/Mobile\ Documents/com~apple~CloudDocs/UCD/CSSA\ Computer\ Science/COMP10050\ Software\ Engineering\ Project\ 1\ 2019-2020/Assignment\ 2/Week8/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Library/Mobile\ Documents/com~apple~CloudDocs/UCD/CSSA\ Computer\ Science/COMP10050\ Software\ Engineering\ Project\ 1\ 2019-2020/Assignment\ 2/Week8/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/lewiszhang/Library/Mobile Documents/com~apple~CloudDocs/UCD/CSSA Computer Science/COMP10050 Software Engineering Project 1 2019-2020/Assignment 2/Week8/Focus/cmake-build-debug"/>
+				<Option working_dir="/Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Library/Mobile\ Documents/com~apple~CloudDocs/UCD/CSSA\ Computer\ Science/COMP10050\ Software\ Engineering\ Project\ 1\ 2019-2020/Assignment\ 2/Week8/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Library/Mobile\ Documents/com~apple~CloudDocs/UCD/CSSA\ Computer\ Science/COMP10050\ Software\ Engineering\ Project\ 1\ 2019-2020/Assignment\ 2/Week8/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Library/Mobile\ Documents/com~apple~CloudDocs/UCD/CSSA\ Computer\ Science/COMP10050\ Software\ Engineering\ Project\ 1\ 2019-2020/Assignment\ 2/Week8/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Library/Mobile\ Documents/com~apple~CloudDocs/UCD/CSSA\ Computer\ Science/COMP10050\ Software\ Engineering\ Project\ 1\ 2019-2020/Assignment\ 2/Week8/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Focus">
-				<Option output="/Users/lewiszhang/Library/Mobile Documents/com~apple~CloudDocs/UCD/CSSA Computer Science/COMP10050 Software Engineering Project 1 2019-2020/Assignment 2/Week8/Focus/cmake-build-debug/Focus" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/lewiszhang/Library/Mobile Documents/com~apple~CloudDocs/UCD/CSSA Computer Science/COMP10050 Software Engineering Project 1 2019-2020/Assignment 2/Week8/Focus/cmake-build-debug"/>
+				<Option output="/Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug/Focus" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -51,15 +51,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Library/Mobile\ Documents/com~apple~CloudDocs/UCD/CSSA\ Computer\ Science/COMP10050\ Software\ Engineering\ Project\ 1\ 2019-2020/Assignment\ 2/Week8/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 Focus"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Library/Mobile\ Documents/com~apple~CloudDocs/UCD/CSSA\ Computer\ Science/COMP10050\ Software\ Engineering\ Project\ 1\ 2019-2020/Assignment\ 2/Week8/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Library/Mobile\ Documents/com~apple~CloudDocs/UCD/CSSA\ Computer\ Science/COMP10050\ Software\ Engineering\ Project\ 1\ 2019-2020/Assignment\ 2/Week8/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Library/Mobile\ Documents/com~apple~CloudDocs/UCD/CSSA\ Computer\ Science/COMP10050\ Software\ Engineering\ Project\ 1\ 2019-2020/Assignment\ 2/Week8/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 Focus"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Focus/fast">
-				<Option output="/Users/lewiszhang/Library/Mobile Documents/com~apple~CloudDocs/UCD/CSSA Computer Science/COMP10050 Software Engineering Project 1 2019-2020/Assignment 2/Week8/Focus/cmake-build-debug/Focus" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/lewiszhang/Library/Mobile Documents/com~apple~CloudDocs/UCD/CSSA Computer Science/COMP10050 Software Engineering Project 1 2019-2020/Assignment 2/Week8/Focus/cmake-build-debug"/>
+				<Option output="/Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug/Focus" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -71,29 +71,35 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Library/Mobile\ Documents/com~apple~CloudDocs/UCD/CSSA\ Computer\ Science/COMP10050\ Software\ Engineering\ Project\ 1\ 2019-2020/Assignment\ 2/Week8/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 Focus/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Library/Mobile\ Documents/com~apple~CloudDocs/UCD/CSSA\ Computer\ Science/COMP10050\ Software\ Engineering\ Project\ 1\ 2019-2020/Assignment\ 2/Week8/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Library/Mobile\ Documents/com~apple~CloudDocs/UCD/CSSA\ Computer\ Science/COMP10050\ Software\ Engineering\ Project\ 1\ 2019-2020/Assignment\ 2/Week8/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Library/Mobile\ Documents/com~apple~CloudDocs/UCD/CSSA\ Computer\ Science/COMP10050\ Software\ Engineering\ Project\ 1\ 2019-2020/Assignment\ 2/Week8/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 Focus/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/lewiszhang/Library/Mobile Documents/com~apple~CloudDocs/UCD/CSSA Computer Science/COMP10050 Software Engineering Project 1 2019-2020/Assignment 2/Week8/Focus/game_init.c">
+		<Unit filename="/Users/lewiszhang/Documents/COMP10050/Focus/game_init.c">
 			<Option target="Focus"/>
 		</Unit>
-		<Unit filename="/Users/lewiszhang/Library/Mobile Documents/com~apple~CloudDocs/UCD/CSSA Computer Science/COMP10050 Software Engineering Project 1 2019-2020/Assignment 2/Week8/Focus/game_init.h">
+		<Unit filename="/Users/lewiszhang/Documents/COMP10050/Focus/game_init.h">
 			<Option target="Focus"/>
 		</Unit>
-		<Unit filename="/Users/lewiszhang/Library/Mobile Documents/com~apple~CloudDocs/UCD/CSSA Computer Science/COMP10050 Software Engineering Project 1 2019-2020/Assignment 2/Week8/Focus/input_output.c">
+		<Unit filename="/Users/lewiszhang/Documents/COMP10050/Focus/game_run.c">
 			<Option target="Focus"/>
 		</Unit>
-		<Unit filename="/Users/lewiszhang/Library/Mobile Documents/com~apple~CloudDocs/UCD/CSSA Computer Science/COMP10050 Software Engineering Project 1 2019-2020/Assignment 2/Week8/Focus/input_output.h">
+		<Unit filename="/Users/lewiszhang/Documents/COMP10050/Focus/game_run.h">
 			<Option target="Focus"/>
 		</Unit>
-		<Unit filename="/Users/lewiszhang/Library/Mobile Documents/com~apple~CloudDocs/UCD/CSSA Computer Science/COMP10050 Software Engineering Project 1 2019-2020/Assignment 2/Week8/Focus/main.c">
+		<Unit filename="/Users/lewiszhang/Documents/COMP10050/Focus/input_output.c">
 			<Option target="Focus"/>
 		</Unit>
-		<Unit filename="/Users/lewiszhang/Library/Mobile Documents/com~apple~CloudDocs/UCD/CSSA Computer Science/COMP10050 Software Engineering Project 1 2019-2020/Assignment 2/Week8/Focus/CMakeLists.txt">
+		<Unit filename="/Users/lewiszhang/Documents/COMP10050/Focus/input_output.h">
+			<Option target="Focus"/>
+		</Unit>
+		<Unit filename="/Users/lewiszhang/Documents/COMP10050/Focus/main.c">
+			<Option target="Focus"/>
+		</Unit>
+		<Unit filename="/Users/lewiszhang/Documents/COMP10050/Focus/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

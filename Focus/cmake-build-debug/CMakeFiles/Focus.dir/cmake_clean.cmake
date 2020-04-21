@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Focus.dir/game_init.c.o"
+  "CMakeFiles/Focus.dir/game_run.c.o"
   "CMakeFiles/Focus.dir/input_output.c.o"
   "CMakeFiles/Focus.dir/main.c.o"
   "Focus"

@@ -34,3 +34,21 @@ void print_board(square board[BOARD_SIZE][BOARD_SIZE]){
         printf("|\n");
     }
 }
+
+void num(square * s)
+{
+    printf("| %d ", s->num_pieces);
+}
+
+void print_number_of_pieces(square board[BOARD_SIZE][BOARD_SIZE])
+{
+    printf("***** The number of pieces *****\n");
+    for (int i = 0; i < BOARD_SIZE; i++)
+    {
+        for (int j = 0; j < BOARD_SIZE; j++)
+        {
+            num(&board[i][j]);
+        }
+        printf("|\n");
+    }
+}

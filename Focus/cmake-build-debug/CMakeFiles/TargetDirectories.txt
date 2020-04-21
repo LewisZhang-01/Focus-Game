@@ -1,3 +1,3 @@
-/Users/lewiszhang/Library/Mobile Documents/com~apple~CloudDocs/UCD/CSSA Computer Science/COMP10050 Software Engineering Project 1 2019-2020/Assignment 2/Week8/Focus/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/lewiszhang/Library/Mobile Documents/com~apple~CloudDocs/UCD/CSSA Computer Science/COMP10050 Software Engineering Project 1 2019-2020/Assignment 2/Week8/Focus/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/lewiszhang/Library/Mobile Documents/com~apple~CloudDocs/UCD/CSSA Computer Science/COMP10050 Software Engineering Project 1 2019-2020/Assignment 2/Week8/Focus/cmake-build-debug/CMakeFiles/Focus.dir
+/Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug/CMakeFiles/Focus.dir

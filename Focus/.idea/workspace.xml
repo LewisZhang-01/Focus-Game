@@ -11,7 +11,41 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a95c042f-4f5e-44cd-99c0-4463cc2710eb" name="Default Changelist" comment="" />
+    <list default="true" id="a95c042f-4f5e-44cd-99c0-4463cc2710eb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/game_run.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game_run.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/game_init.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/game_init.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/input_output.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/input_output.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/main.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Focus" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Focus" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Focus.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Focus.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game_init.c" beforeDir="false" afterPath="$PROJECT_DIR$/game_init.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game_init.h" beforeDir="false" afterPath="$PROJECT_DIR$/game_init.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_output.c" beforeDir="false" afterPath="$PROJECT_DIR$/input_output.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_output.h" beforeDir="false" afterPath="$PROJECT_DIR$/input_output.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +55,11 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1Zg2jNSGLZSEvhUm4eimANPoRx6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -70,6 +108,9 @@
       <workItem from="1586160478220" duration="112000" />
       <workItem from="1586160615760" duration="13635000" />
       <workItem from="1586224548367" duration="1140000" />
+      <workItem from="1586311799489" duration="896000" />
+      <workItem from="1586317927615" duration="2231000" />
+      <workItem from="1587456002156" duration="4653000" />
     </task>
     <servers />
   </component>
@@ -77,6 +118,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="448" y="260" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587457987940">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="448" y="260" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1587457987940" />
     <state x="492" y="246" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1585246619243">
       <screen x="0" y="23" width="1360" height="711" />
     </state>
@@ -85,27 +130,27 @@
       <screen x="0" y="23" width="1360" height="711" />
     </state>
     <state x="506" y="155" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1360.711@0.23.1360.711" timestamp="1585247891140" />
-    <state width="1398" height="214" key="GridCell.Tab.0.bottom" timestamp="1586226486312">
+    <state width="1398" height="247" key="GridCell.Tab.0.bottom" timestamp="1587460856979">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1586226486312" />
-    <state width="1398" height="214" key="GridCell.Tab.0.center" timestamp="1586226486312">
+    <state width="1398" height="247" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1587460856979" />
+    <state width="1398" height="247" key="GridCell.Tab.0.center" timestamp="1587460856978">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1586226486312" />
-    <state width="1398" height="214" key="GridCell.Tab.0.left" timestamp="1586226486311">
+    <state width="1398" height="247" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1587460856978" />
+    <state width="1398" height="247" key="GridCell.Tab.0.left" timestamp="1587460856977">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1586226486311" />
-    <state width="1398" height="214" key="GridCell.Tab.0.right" timestamp="1586226486312">
+    <state width="1398" height="247" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1587460856977" />
+    <state width="1398" height="247" key="GridCell.Tab.0.right" timestamp="1587460856978">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1586226486312" />
-    <state x="450" y="267" key="com.intellij.ide.util.TipDialog" timestamp="1586224548447">
+    <state width="1398" height="247" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1587460856978" />
+    <state x="450" y="267" key="com.intellij.ide.util.TipDialog" timestamp="1587456002210">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="450" y="267" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1586224548447" />
+    <state x="450" y="267" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1587456002210" />
     <state x="425" y="234" key="com.intellij.ide.util.TipDialog/0.23.1360.711@0.23.1360.711" timestamp="1585246555157" />
-    <state x="450" y="269" key="com.intellij.ide.util.TipDialog/0.23.1440.828@0.23.1440.828" timestamp="1586160615992" />
+    <state x="450" y="269" key="com.intellij.ide.util.TipDialog/0.23.1440.828@0.23.1440.828" timestamp="1586318537326" />
   </component>
 </project>

@@ -1,4 +1,4 @@
-# Install script for directory: /Users/lewiszhang/Library/Mobile Documents/com~apple~CloudDocs/UCD/CSSA Computer Science/COMP10050 Software Engineering Project 1 2019-2020/Assignment 2/Week8/Focus
+# Install script for directory: /Users/lewiszhang/Documents/COMP10050/Focus
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/lewiszhang/Library/Mobile Documents/com~apple~CloudDocs/UCD/CSSA Computer Science/COMP10050 Software Engineering Project 1 2019-2020/Assignment 2/Week8/Focus/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/lewiszhang/Documents/COMP10050/Focus/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

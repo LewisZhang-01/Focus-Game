@@ -7,7 +7,6 @@
 
 #endif //FOCUS_GAME_INIT_H
 
-
 #define BOARD_SIZE 8
 #define PLAYERS_NUM 2
 
@@ -20,13 +19,13 @@ typedef enum color {
 // Square types
 //INVALID: squares that are on the sides and where no piece can be placed
 //VALID: squares where it is possible to place a piece or a stack
-typedef enum square_type {
+typedef enum square_type{
     VALID,
     INVALID
 }square_type;
 
 //Player
-typedef struct player {
+typedef struct player{
     //the color associated with the player
     color player_color;
     //the name associated with the player
@@ -49,7 +48,7 @@ typedef struct piece {
 }piece;
 
 // A Square of the board
-typedef struct square {
+typedef struct square{
     // type of the square (VALID/INVALID)
     square_type type;
 
@@ -66,6 +65,7 @@ void initialize_players(player players[PLAYERS_NUM]);
 
 //Function to create the board
 void initialize_board(square board[BOARD_SIZE][BOARD_SIZE]);
+
 
 
 
