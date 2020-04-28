@@ -1,11 +1,3 @@
-//
-// Created by Lili on 26/03/2020.
-//
-
-//
-// Created by Lili on 24/03/2020.
-//
-
 #include <stdio.h>
 #include "input_output.h"
 
@@ -41,6 +33,7 @@ void num(square * s)
     printf("| %d ", s->num_pieces);
 }
 
+// Function for print the number_of_pieces.
 void print_number_of_pieces(square board[BOARD_SIZE][BOARD_SIZE])
 {
     printf("***** The number of pieces *****\n");

@@ -1,23 +1,18 @@
-//
-// Created by Lili on 26/03/2020.
-//
-
 #include <stdio.h>
 #include <stdlib.h>
 #include "game_init.h"
 #include "game_run.h"
 
+// Function to initialize the players.
 void initialize_players(player players[PLAYERS_NUM])
 {
     // implement here the functionality to initialize the players
     int player_color_choice[PLAYERS_NUM];
-    player_flag flags;
 
     for(int i=0; i<PLAYERS_NUM;i++)
     {// Ask user input players' name.
         printf("Please enter the N0.%d Player's name:\n",i+1);
         scanf("%s",&players[i].Players_name[i]);
-
         if (i==1)// Check if it runs for player_2.
         {
             if (player_color_choice[i-1]==0)// If player_1 chooses red color, the second player can only choose green.
@@ -36,8 +31,7 @@ void initialize_players(player players[PLAYERS_NUM])
             printf("Please choose a color:\n0.Red\n1.Green\n");
             scanf("%d",&player_color_choice[i]);
         }
-        
-
+        // start with 0 in both player own kept & adv_captured pieces.
         players[i].own_kept = 0;
         players[i].adv_captured = 0;
     }
@@ -45,7 +39,6 @@ void initialize_players(player players[PLAYERS_NUM])
     for(int i=0; i<PLAYERS_NUM;i++)
     {
         printf("NO.%d Player's name: %s\n", i+1, &players[i].Players_name[i]);// Output players' name.
-
         if(player_color_choice[i]==0)
         {// If user choose 0 that means Red.
             players[i].player_color = RED;
@@ -69,7 +62,6 @@ void initialize_players(player players[PLAYERS_NUM])
         printf("The number of own pieces NO.%d player accumulated: %d\n",i+1,players[i].own_kept);
         printf("The number of adversary’s pieces NO.%d player captured: %d\n",i+1,players[i].adv_captured);
     }
-
 }
 
 //Set Invalid Squares (where it is not possible to place stacks)
@@ -141,5 +133,3 @@ void initialize_board(square board [BOARD_SIZE][BOARD_SIZE])
         }
     }
 }
-
-

@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+/Users/lewiszhang/Documents/COMP10050/Focus/game_init.c
+stdio.h
+-
+stdlib.h
+-
+game_init.h
+/Users/lewiszhang/Documents/COMP10050/Focus/game_init.h
+game_run.h
+/Users/lewiszhang/Documents/COMP10050/Focus/game_run.h
+
 /Users/lewiszhang/Documents/COMP10050/Focus/game_init.h
 
 /Users/lewiszhang/Documents/COMP10050/Focus/game_run.c
@@ -26,7 +36,21 @@ game_init.h
 game_init.h
 /Users/lewiszhang/Documents/COMP10050/Focus/game_init.h
 
+/Users/lewiszhang/Documents/COMP10050/Focus/input_output.c
+stdio.h
+-
+input_output.h
+/Users/lewiszhang/Documents/COMP10050/Focus/input_output.h
+
 /Users/lewiszhang/Documents/COMP10050/Focus/input_output.h
 game_init.h
 /Users/lewiszhang/Documents/COMP10050/Focus/game_init.h
+
+/Users/lewiszhang/Documents/COMP10050/Focus/main.c
+stdio.h
+-
+input_output.h
+/Users/lewiszhang/Documents/COMP10050/Focus/input_output.h
+game_run.h
+/Users/lewiszhang/Documents/COMP10050/Focus/game_run.h
 
