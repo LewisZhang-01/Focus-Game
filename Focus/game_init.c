@@ -24,15 +24,11 @@ void initialize_players(player players[PLAYERS_NUM])
             {
                 printf("Red occupied by player_1, automatically assign to Green color.\n");
                 player_color_choice[i] = 1;
-                flags.flag_1 =0;
-                flags.flag_2=1;
             }
             else
             {// If player_1 chooses green color, the second player can only choose red.
                 printf("Green occupied by player_1, automatically assign to Red color.\n");
                 player_color_choice[i] = 0;
-                flags.flag_1=1;
-                flags.flag_2=0;
             }
         }
         else
@@ -41,10 +37,9 @@ void initialize_players(player players[PLAYERS_NUM])
             scanf("%d",&player_color_choice[i]);
         }
         
-        printf("Please enter the number of own pieces accumulated:\n");
-        scanf("%d",&players[i].own_kept);
-        printf("Please enter the number of adversary's pieces captured:\n");
-        scanf("%d",&players[i].adv_captured);
+
+        players[i].own_kept = 0;
+        players[i].adv_captured = 0;
     }
 
     for(int i=0; i<PLAYERS_NUM;i++)

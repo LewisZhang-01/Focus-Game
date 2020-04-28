@@ -6,7 +6,7 @@
 #ifndef FOCUS_INPUT_OUTPUT_H
 #define FOCUS_INPUT_OUTPUT_H
 
-#endif //FOCUS_INPUT_OUTPUT_H
+
 
 #include "game_init.h"
 
@@ -18,3 +18,5 @@ void print_number_of_pieces(square board[BOARD_SIZE][BOARD_SIZE]);
 
 //Function to call the count struct
 void num(square * s);
+
+#endif //FOCUS_INPUT_OUTPUT_H

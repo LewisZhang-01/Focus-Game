@@ -9,20 +9,24 @@
 /Users/lewiszhang/Documents/COMP10050/Focus/game_init.h
 
 /Users/lewiszhang/Documents/COMP10050/Focus/game_run.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
 game_run.h
 /Users/lewiszhang/Documents/COMP10050/Focus/game_run.h
-
-/Users/lewiszhang/Documents/COMP10050/Focus/game_run.h
-
+input_output.h
 /Users/lewiszhang/Documents/COMP10050/Focus/input_output.h
 game_init.h
 /Users/lewiszhang/Documents/COMP10050/Focus/game_init.h
 
-/Users/lewiszhang/Documents/COMP10050/Focus/main.c
-stdio.h
--
-input_output.h
-/Users/lewiszhang/Documents/COMP10050/Focus/input_output.h
-game_run.h
 /Users/lewiszhang/Documents/COMP10050/Focus/game_run.h
+game_init.h
+/Users/lewiszhang/Documents/COMP10050/Focus/game_init.h
+
+/Users/lewiszhang/Documents/COMP10050/Focus/input_output.h
+game_init.h
+/Users/lewiszhang/Documents/COMP10050/Focus/game_init.h
 

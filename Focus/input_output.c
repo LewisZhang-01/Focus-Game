@@ -17,6 +17,7 @@
 
 void print_board(square board[BOARD_SIZE][BOARD_SIZE]){
     printf("****** The Board ******\n");
+    printf("| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |C/R|\n");
     for(int i = 0; i < BOARD_SIZE; i ++){
         for (int j = 0; j < BOARD_SIZE; j++){
             if(board[i][j].type == VALID) {
@@ -31,7 +32,7 @@ void print_board(square board[BOARD_SIZE][BOARD_SIZE]){
             else
                 printf("| - ");
         }
-        printf("|\n");
+        printf("| %d |\n",i+1);
     }
 }
 
@@ -43,12 +44,15 @@ void num(square * s)
 void print_number_of_pieces(square board[BOARD_SIZE][BOARD_SIZE])
 {
     printf("***** The number of pieces *****\n");
+
+    printf("| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |C/R|\n");
+
     for (int i = 0; i < BOARD_SIZE; i++)
     {
         for (int j = 0; j < BOARD_SIZE; j++)
         {
             num(&board[i][j]);
         }
-        printf("|\n");
+        printf("| %d |\n",i+1);
     }
 }

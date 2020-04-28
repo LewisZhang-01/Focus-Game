@@ -5,7 +5,7 @@
 #ifndef FOCUS_GAME_INIT_H
 #define FOCUS_GAME_INIT_H
 
-#endif //FOCUS_GAME_INIT_H
+
 
 #define BOARD_SIZE 8
 #define PLAYERS_NUM 2
@@ -36,16 +36,18 @@ typedef struct player{
     int adv_captured;
 }player;
 
+
 // A piece
 typedef struct piece {
     //the color associated with a piece
     color p_color;
 
-    // This is a pointer to the next pieces
-    // to create a stack. For this lab you do not have to think too much about it.
+    // This is a pointer to the next pieces to create a stack.
     struct piece * next;
 
 }piece;
+
+
 
 // A Square of the board
 typedef struct square{
@@ -69,5 +71,14 @@ void initialize_board(square board[BOARD_SIZE][BOARD_SIZE]);
 
 
 
+//Function to manage player's turn
+int turn(player players[PLAYERS_NUM],int tag);
+
+
+piece * push(square * s, piece *top);
+piece * push_with_stack(square * s, piece *top, int num);
+
+
+#endif //FOCUS_GAME_INIT_H
 
 
