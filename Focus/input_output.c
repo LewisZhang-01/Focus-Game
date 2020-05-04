@@ -8,7 +8,7 @@
  * Valid squares with a RED piece are printed as | R | */
 
 void print_board(square board[BOARD_SIZE][BOARD_SIZE]){
-    printf("****** The Board ******\n");
+    printf("************  The Board  ************\n");
     printf("| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |C/R|\n");
     for(int i = 0; i < BOARD_SIZE; i ++){
         for (int j = 0; j < BOARD_SIZE; j++){
@@ -36,7 +36,7 @@ void num(square * s)
 // Function for print the number_of_pieces.
 void print_number_of_pieces(square board[BOARD_SIZE][BOARD_SIZE])
 {
-    printf("***** The number of pieces *****\n");
+    printf("*******  The number of pieces *******\n");
 
     printf("| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |C/R|\n");
 

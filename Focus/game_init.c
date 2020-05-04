@@ -11,18 +11,20 @@ void initialize_players(player players[PLAYERS_NUM])
 
     for(int i=0; i<PLAYERS_NUM;i++)
     {// Ask user input players' name.
+        printf("-------------------------------------\n");
         printf("Please enter the N0.%d Player's name:\n",i+1);
         scanf("%s",&players[i].Players_name[i]);
+        printf("-------------------------------------\n");
         if (i==1)// Check if it runs for player_2.
         {
             if (player_color_choice[i-1]==0)// If player_1 chooses red color, the second player can only choose green.
             {
-                printf("Red occupied by player_1, automatically assign to Green color.\n");
+                printf("*Red occupied by player_1, \nautomatically assign to Green color.\n");
                 player_color_choice[i] = 1;
             }
             else
             {// If player_1 chooses green color, the second player can only choose red.
-                printf("Green occupied by player_1, automatically assign to Red color.\n");
+                printf("*Green occupied by player_1, \nautomatically assign to Red color.\n");
                 player_color_choice[i] = 0;
             }
         }
@@ -38,6 +40,7 @@ void initialize_players(player players[PLAYERS_NUM])
 
     for(int i=0; i<PLAYERS_NUM;i++)
     {
+        printf("-------------------------------------\n");
         printf("NO.%d Player's name: %s\n", i+1, &players[i].Players_name[i]);// Output players' name.
         if(player_color_choice[i]==0)
         {// If user choose 0 that means Red.
@@ -59,9 +62,11 @@ void initialize_players(player players[PLAYERS_NUM])
                 break;
         }
         // Print number of own pieces accumulated and number of adversary’s pieces captured.
-        printf("The number of own pieces NO.%d player accumulated: %d\n",i+1,players[i].own_kept);
-        printf("The number of adversary’s pieces NO.%d player captured: %d\n",i+1,players[i].adv_captured);
+        printf("The number of own pieces NO.%d player \naccumulated: %d\n",i+1,players[i].own_kept);
+        printf("The number of adversary’s pieces NO.%d \nplayer captured: %d\n",i+1,players[i].adv_captured);
+        printf("-------------------------------------\n");
     }
+    printf("\n");// New line.
 }
 
 //Set Invalid Squares (where it is not possible to place stacks)

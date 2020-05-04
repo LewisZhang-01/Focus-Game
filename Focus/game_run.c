@@ -9,6 +9,7 @@
 player_flag flags;
 player Players[PLAYERS_NUM];
 int first=0;
+int player_color;
 
 // The function that performs turn control.
 int turn(player players[PLAYERS_NUM],int tag)
@@ -23,10 +24,10 @@ int turn(player players[PLAYERS_NUM],int tag)
             // Output players' turn.
             switch (players[0].player_color) {// Print user choice.
                 case (RED):// if player choose red then print red.
-                    printf("Now it's %s's turn (%s side)!\n", &players[0].Players_name[0], "Red");
+                    printf("Now it's %s's turn (%s side)!\nYou can only choose Red color piece.\n", &players[0].Players_name[0], "Red");
                     break;
                 case (GREEN):// if player choose green then print green.
-                    printf("Now it's %s's turn (%s side)!\n", &players[0].Players_name[0], "Green");
+                    printf("Now it's %s's turn (%s side)!\nYou can only choose Green color piece.\n", &players[0].Players_name[0], "Green");
                     break;
                 default:
                     break;
@@ -38,10 +39,10 @@ int turn(player players[PLAYERS_NUM],int tag)
         } else if (players[1].player_color == RED) {// If 2nd player choose red.
             switch (players[1].player_color) {// Print user choice.
                 case (RED):// if player choose red then print red.
-                    printf("Now it's %s's turn (%s side)!\n", &players[1].Players_name[1], "Red");
+                    printf("Now it's %s's turn (%s side)!\nYou can only choose Red color piece.\n", &players[1].Players_name[1], "Red");
                     break;
                 case (GREEN):// if player choose green then print green.
-                    printf("Now it's %s's turn (%s side)!\n", &players[1].Players_name[1], "Green");
+                    printf("Now it's %s's turn (%s side)!\nYou can only choose Green color piece.\n", &players[1].Players_name[1], "Green");
                     break;
                 default:
                     break;
@@ -56,10 +57,10 @@ int turn(player players[PLAYERS_NUM],int tag)
     if (tag == 0) {
         switch (players[0].player_color) {// Print user choice.
             case (RED):// if player choose red then print red.
-                printf("Now it's %s's turn (%s side)!\n", &players[0].Players_name[0], "Red");
+                printf("Now it's %s's turn (%s side)!\nYou can only choose Red color piece.\n", &players[0].Players_name[0], "Red");
                 break;
             case (GREEN):// if player choose green then print green.
-                printf("Now it's %s's turn (%s side)!\n", &players[0].Players_name[0], "Green");
+                printf("Now it's %s's turn (%s side)!\nYou can only choose Green color piece.\n", &players[0].Players_name[0], "Green");
                 break;
             default:
                 break;
@@ -69,10 +70,10 @@ int turn(player players[PLAYERS_NUM],int tag)
     {
         switch (players[1].player_color) {// Print user choice.
             case (RED):// if player choose red then print red.
-                printf("Now it's %s's turn (%s side)!\n", &players[1].Players_name[1], "Red");
+                printf("Now it's %s's turn (%s side)!\nYou can only choose Red color piece.\n", &players[1].Players_name[1], "Red");
                 break;
             case (GREEN):// if player choose green then print green.
-                printf("Now it's %s's turn (%s side)!\n", &players[1].Players_name[1], "Green");
+                printf("Now it's %s's turn (%s side)!\nYou can only choose Green color piece.\n", &players[1].Players_name[1], "Green");
                 break;
             default:
                 break;
@@ -83,7 +84,7 @@ int turn(player players[PLAYERS_NUM],int tag)
 }
 
 // Function for Player move
-void Player_Move(square board [BOARD_SIZE][BOARD_SIZE], int tag)
+int Player_Move(square board [BOARD_SIZE][BOARD_SIZE], int tag)
 {
     int x = 0;
     int y = 0;
@@ -95,10 +96,10 @@ void Player_Move(square board [BOARD_SIZE][BOARD_SIZE], int tag)
     // some condition for player's choice.
     while(pass==0)
     {
-        printf("Please enter the corresponding abscissa of the piece/stack you want to move:");
+        printf("Please enter the corresponding abscissa \nof the piece/stack you want to move:\n");
         printf("(Column number)\n");
         scanf("%d", &y);
-        printf("Please enter the corresponding ordinate of the piece/stack you want to move:");
+        printf("Please enter the corresponding ordinate \nof the piece/stack you want to move:\n");
         printf("(Row number)\n");
         scanf("%d", &x);
         // 1-8 on the command line board and 0-7 here, convert.
@@ -114,7 +115,7 @@ void Player_Move(square board [BOARD_SIZE][BOARD_SIZE], int tag)
 
         } else if ((board[x][y].stack->p_color==GREEN && tag==1)||(board[x][y].stack->p_color==RED && tag==0)) // current choose : red but player1:green
         {// The game allows a player to move his own pieces or only a stack that has a top piece of the same colour of the player.
-            printf("Error! You can only choose the color as same as you are!\n");
+            printf("Error! You can only choose the color \nas same as you are!\n");
             printf("Please replace it with another one:\n");
             pass = 0;
 
@@ -125,12 +126,22 @@ void Player_Move(square board [BOARD_SIZE][BOARD_SIZE], int tag)
         }
     }
 
+    // Check the winner.
+    //The game is won when the opponent's pieces on the board cannot move and the number of own kept piece is 0.
+    if( check_win(board)==1 && (Players[0].own_kept==0 || Players[1].own_kept==0))
+    {// Red win.
+        return 1;
+    } else if ( check_win(board)==0 && (Players[0].own_kept==0 || Players[1].own_kept==0))
+    {// Green win.
+        return 2;
+    }
+
     // The game allows to move a piece/stack of a number of positions (up, down,left or right) corresponding to the size of the stack.
     int num =board[x][y].num_pieces;
-    printf("The total number in your choose stack is %d, so you can move %d step(s).\n ",num,num);
+    printf("The total number in your choose stack \nis %d, so you can move %d step(s).\n ",num,num);
     for (int i = 0; i < num; ++i)
     {// Ask player to enter the direction of movement.
-        printf("%d/%d\nIf you want:\n1.Up\n2.Down\n3.Left\n4.Right\n",i+1,num);
+        printf("Now:%d/%d\nIf you want:\n1.Up\n2.Down\n3.Left\n4.Right\n",i+1,num);
         scanf("%d",&choice);
         switch (choice)
         {
@@ -166,14 +177,12 @@ void Player_Move(square board [BOARD_SIZE][BOARD_SIZE], int tag)
                 break;
         }
     }
+    return 0;
 }
 
 // The Function for detail of Player move.
 int move(square board [BOARD_SIZE][BOARD_SIZE],square * s,int x, int y, int dx, int dy)
 {
-    int player_color;
-    char p_c;
-
     // Give a solution if player want move to invalid place.
     if(board[dx][dy].type==INVALID)
     {
@@ -186,92 +195,67 @@ int move(square board [BOARD_SIZE][BOARD_SIZE],square * s,int x, int y, int dx, 
     if(board[x][y].stack->p_color==GREEN)
     {
         player_color=1; //green
-        p_c = GREEN;
     }
     else
     {
         player_color=0;//red
-        p_c = RED;
     }
 
     // Maintain the size of each stack equal to 5
-    if (board[x][y].num_pieces==5)
+    if (board[x][y].num_pieces==5 && board[dx][dy].num_pieces != 0)
     {
-        char temp = board[dx][dy].stack->p_color;
-        // Update player's own kept and captured pieces.
-        if (strcmp(&temp, &p_c) == 0)// next one is current player's piece
+        piece *top = NULL;
+        piece *curr = NULL;
+        piece *last = NULL;
+        piece *toRemove = NULL;
+
+        // Get target memory address.
+        top = get_Ptr_stack(&board[dx][dy],board[x][y].num_pieces,board[dx][dy].num_pieces);
+        board[dx][dy].stack = top;
+        // Link current stuck to target one.
+        top = push_with_stack(&board[x][y], top, s->num_pieces-1);
+        board[dx][dy].stack = top;
+        delete(&board[x][y]);// Delete previous coordinates.
+
+        int count = 1;
+
+        curr = top;
+        while(curr != NULL)
         {
-            if(player_color == 0) // if player is red
+            if (count < 5)
             {
-                if(flags.flag_0 == 0)// player[0]:red
-                {
-                    update(Players, 1, 0 ,1);// n:0 ( captured ) n:1( kept ) n:2( player -> egde)
-                }
-                else if (flags.flag_1 == 0)// player[1]:red
-                {
-                    update(Players, 1, 1 ,0);// n:0 ( captured ) n:1( kept ) n:2( player -> egde)
-                }
-            }
-            else // if player is green
+                curr = curr->next;
+                count++;
+            } else
             {
-                if(flags.flag_0 == 1)// player[0]:green
-                {
-                    update(Players, 1, 0 ,1);// n:0 ( captured ) n:1( kept ) n:2( player -> egde)
-                }
-                else if (flags.flag_1 == 1)// player[1]:green
-                {
-                    update(Players, 1, 1 ,0);// n:0 ( captured ) n:1( kept ) n:2( player -> egde)
-                }
-            }
-        } else // next one is not current player's piece
-        {
-            if(player_color == 0) // if player is red
-            {
-                if(flags.flag_0 == 0)// player[0]:red
-                {
-                    update(Players, 0, 0 ,1);// n:0 ( captured ) n:1( kept ) n:2( player -> egde)
-                }
-                else if (flags.flag_1 == 0)// player[1]:red
-                {
-                    update(Players, 0, 1 ,0);// n:0 ( captured ) n:1( kept ) n:2( player -> egde)
-                }
-            }
-            else // if player is green
-            {
-                if(flags.flag_0 == 1)// player[0]:green
-                {
-                    update(Players, 0, 0 ,1);// n:0 ( captured ) n:1( kept ) n:2( player -> egde)
-                }
-                else if (flags.flag_1 == 1)// player[1]:green
-                {
-                    update(Players, 0, 1 ,0);// n:0 ( captured ) n:1( kept ) n:2( player -> egde)
-                }
+                last = curr;
+                break;
             }
         }
 
-        int num=0;
-        for (int i = 0; i < board[x][y].num_pieces ; ++i)
+        if(last != NULL)
         {
-            piece *top = NULL;
-            piece *tem = NULL;
-            int d_num = board[dx][dy].num_pieces; // number of target pieces.
-            tem = top = get_Ptr_stack(&board[dx][dy],board[x][y].num_pieces,board[dx][dy].num_pieces);// get target stack memory address.
-            board[dx][dy].stack = top;
-            // Link current stuck to target one.
-            if(board[x][y].num_pieces==1)
+            curr = curr->next;
+            while(curr!=NULL)
             {
-                top = push(&board[x][y] ,top);
-            } else
-            {
-                top = push_with_stack(&board[x][y], top, board[x][y].num_pieces-1);
+                if(curr->p_color != player_color)
+                {
+                    Players[player_color].adv_captured ++;
+                } else
+                {
+                    Players[player_color].own_kept ++;
+                }
+                toRemove = curr;
+                curr = curr->next;
+                free(toRemove);
             }
-            board[dx][dy].stack = top;
-            delete(&board[x][y],tem);// Delete previous coordinates.
-            num = s->num_pieces - d_num;// Update the number of pieces.
+            last->next = NULL;
         }
-        delete_more(&board[x][y],num);
-        print_board(board);
-        print_number_of_pieces(board);
+        board[dx][dy].num_pieces = 5;
+        print_board(board);// Print current new board.
+        print_number_of_pieces(board);// print current new number of pieces.
+        // Update player's own kept and captured pieces.
+        print_kept_and_capt (player_color);
         return 0;
     }
 
@@ -281,30 +265,8 @@ int move(square board [BOARD_SIZE][BOARD_SIZE],square * s,int x, int y, int dx, 
 
         if(board[dx][dy].num_pieces==0)// target piece is close to the edge
         {
-            if(player_color == 0) // if player is red
-            {
-                if(flags.flag_0 == 0)// player[0]:red
-                {
-                    update(Players, 2, 0 ,1);// n:0 (player != get ) n:1(player == get) n:2( player -> egde)
-                }
-                else if (flags.flag_1 == 0)// player[1]:red
-                {
-                    update(Players, 2, 1 ,0);// n:0 (player != get ) n:1(player == get) n:2( player -> egde)
-                }
-            }
-            else // if player is green
-            {
-                if(flags.flag_0 == 1)// player[0]:green
-                {
-                    update(Players, 2, 0 ,1);// n:0 (player != get ) n:1(player == get) n:2( player -> egde)
-                }
-                else if (flags.flag_1 == 1)// player[1]:green
-                {
-                    update(Players, 2, 1 ,0);// n:0 (player != get ) n:1(player == get) n:2( player -> egde)
-                }
-            }
+            print_kept_and_capt (player_color);
         //special case for move to edge.
-            int num=0;
             for (int i = 0; i < board[x][y].num_pieces ; ++i)
             {
                 piece *top = NULL;
@@ -320,91 +282,67 @@ int move(square board [BOARD_SIZE][BOARD_SIZE],square * s,int x, int y, int dx, 
                     top = push_with_stack(&board[x][y] ,top,board[x][y].num_pieces-1);
                 }
                 board[dx][dy].stack = top;
-                num = s->num_pieces;// Update number of pieces.
             }
-            delete_more(&board[x][y],num);// Delete previous coordinates.
+            delete(&board[x][y]);// Delete previous coordinates.
             print_board(board);// Print current new board.
             print_number_of_pieces(board);// print current new number of pieces.
             return 0;
         }
         // Update player's own kept and captured pieces.
-        if(player_color == 0) // if player is red
-        {
-            if(flags.flag_0 == 0)// player[0]:red
-            {
-                update(Players, 2, 0 ,1);// n:0 (player != get ) n:1(player == get) n:2( player -> egde)
-            }
-            else if (flags.flag_1 == 0)// player[1]:red
-            {
-                update(Players, 2, 1 ,0);// n:0 (player != get ) n:1(player == get) n:2( player -> egde)
-            }
-        }
-        else // if player is green
-        {
-            if(flags.flag_0 == 1)// player[0]:green
-            {
-                update(Players, 2, 0 ,1);// n:0 (player != get ) n:1(player == get) n:2( player -> egde)
-            }
-            else if (flags.flag_1 == 1)// player[1]:green
-            {
-                update(Players, 2, 1 ,0);// n:0 (player != get ) n:1(player == get) n:2( player -> egde)
-            }
-        }
-        int num=0;
+        print_kept_and_capt (player_color);
         piece *top = NULL;
         top = get_Ptr(&board[dx][dy]);// Get target memory address.
         top = push(&board[x][y] ,top);// Link current stuck to target one.
         board[dx][dy].stack = top;
-        num = s->num_pieces;// Update number of pieces.
-        delete_more(&board[x][y],num-1);// Delete previous coordinates.
-        printf("top color(0red 1green):%d\n",board[dx][dy].stack->p_color);
-        print_board(board);// Print current new board.
-        print_number_of_pieces(board);// print current new number of pieces.
-}
-    else // Player move stuck
-    {
-        // Update player's own kept and captured pieces.
-        if(player_color == 0) // if player is red
-        {
-            if(flags.flag_0 == 0)// player[0]:red
-            {
-                update(Players, 2, 0 ,1);// n:0 (player != get ) n:1(player == get) n:2( player -> egde)
-            }
-            else if (flags.flag_1 == 0)// player[1]:red
-            {
-                update(Players, 2, 1 ,0);// n:0 (player != get ) n:1(player == get) n:2( player -> egde)
-            }
-        }
-        else // if player is green
-        {
-            if(flags.flag_0 == 1)// player[0]:green
-            {
-                update(Players, 2, 0 ,1);// n:0 (player != get ) n:1(player == get) n:2( player -> egde)
-            }
-            else if (flags.flag_1 == 1)// player[1]:green
-            {
-                update(Players, 2, 1 ,0);// n:0 (player != get ) n:1(player == get) n:2( player -> egde)
-            }
-        }
-
-        int num=0;
-        for (int i = 0; i < board[x][y].num_pieces ; ++i)
-        {
-            piece *top = NULL;
-            // Get target memory address.
-            top = get_Ptr_stack(&board[dx][dy],board[x][y].num_pieces,board[dx][dy].num_pieces);
-            board[dx][dy].stack = top;
-            // Link current stuck to target one.
-            top = push_with_stack(&board[x][y], top, s->num_pieces-1);
-            board[dx][dy].stack = top;
-            num = s->num_pieces;// Update number of pieces.
-        }
-        delete_more(&board[x][y],num);// Delete previous coordinates.
+        delete(&board[x][y]);// Delete previous coordinates.
         printf("top color(0red 1green):%d\n",board[dx][dy].stack->p_color);
         print_board(board);// Print current new board.
         print_number_of_pieces(board);// print current new number of pieces.
     }
+    else // Player move stuck
+    {
+        // Update player's own kept and captured pieces.
+        print_kept_and_capt (player_color);
+
+        piece *top = NULL;
+        // Get target memory address.
+        top = get_Ptr_stack(&board[dx][dy],board[x][y].num_pieces,board[dx][dy].num_pieces);
+        board[dx][dy].stack = top;
+        // Link current stuck to target one.
+        top = push_with_stack(&board[x][y], top, s->num_pieces-1);
+        board[dx][dy].stack = top;
+        delete(&board[x][y]);// Delete previous coordinates.
+        print_board(board);// Print current new board.
+        print_number_of_pieces(board);// print current new number of pieces.
+    }
     return 0;
+}
+
+//Function print info, update player's own kept and captured pieces.
+void print_kept_and_capt (int player__color)
+{
+    if(player__color == 0) // if player is red
+    {
+        if(flags.flag_0 == 0)// player[0]:red
+        {
+            update( 2, 0 ,1);// n:0 (player != get ) n:1(player == get) n:2( player -> egde)
+        }
+        else if (flags.flag_1 == 0)// player[1]:red
+        {
+            update( 2, 1 ,0);// n:0 (player != get ) n:1(player == get) n:2( player -> egde)
+        }
+    }
+    else // if player is green
+    {
+        if(flags.flag_0 == 1)// player[0]:green
+        {
+            update( 2, 0 ,1);// n:0 (player != get ) n:1(player == get) n:2( player -> egde)
+        }
+        else if (flags.flag_1 == 1)// player[1]:green
+        {
+            update( 2, 1 ,0);// n:0 (player != get ) n:1(player == get) n:2( player -> egde)
+        }
+    }
 }
 
 // Function for link current stuck to target one.
@@ -423,7 +361,6 @@ piece * push(square * s, piece *top)
 piece * push_with_stack(square * s, piece *top, int num)
 {
     piece * destination = top;
-    //piece * temp = s->stack;
     switch (num)
     {
         case 1:
@@ -481,53 +418,13 @@ char get_Col (square * s)
     return s->stack->p_color;
 }
 // Delete the previous coordinates.
-void delete (square * s,piece *temp)
+void delete (square * s)
 {
-    piece * temp_ = NULL;/* hold onto node being removed */
-    piece * temp_pre = s->stack;
-    while ( s->stack->next != temp  )
-    {
-        temp_pre = s->stack->next;
-        s->stack->next = s->stack->next->next; /* ... next node */
-    } /* end while */
-    if ( s->stack->next == temp )
-    {
-        temp_ = s->stack->next;
-        temp_pre->next = s->stack->next->next;
-        free(temp_);
-    }
+    s->stack = ( s->stack )=NULL;
 }
-void delete_more (square * s, int num)
-{
-    piece * temp = s->stack;
-    switch (num)
-    {
-        case 1:
-            s->stack = ( s->stack )->next; // "short circuit"
-            free( temp ); //free the temp
-            break;
-        case 2:
-            s->stack = ( s->stack )->next->next; // "short circuit"
-            free( temp ); //free the temp
-            break;
-        case 3:
-            s->stack = ( s->stack )->next->next->next; // "short circuit"
-            free( temp ); //free the temp
-            break;
-        case 4:
-            s->stack = ( s->stack )->next->next->next->next; // "short circuit"
-            free( temp ); //free the temp
-            break;
-        case 5:
-            s->stack = ( s->stack )->next->next->next->next->next->next; // "short circuit"
-            free( temp ); //free the temp
-            break;
-        default:
-            break;
-    }
-}
+
 // Function for Update player's own kept and captured pieces.
-void update(player Players[PLAYERS_NUM],int n, int player_num, int opponent_num)
+void update(int n, int player_num, int opponent_num)
 {
     int i = player_num;
     int o = opponent_num;
@@ -585,14 +482,45 @@ int check_win (square board [BOARD_SIZE][BOARD_SIZE])
         }
     }
     // feedback
-    if ((red_num <=1 && green_num >= 1)||(red_num==0))
+    if (red_num <=1 && green_num >= 1)
     {
         return 0;// Green win.
-    } else if ((green_num <=1 && red_num >= 1)||(green_num==0))
+    } else if (green_num <=1 && red_num >= 1)
     {
         return 1;// Red win.
     } else
     {
         return 2; // continue.
     }
+}
+
+// Move kept piece
+void move_own_kept (square board [BOARD_SIZE][BOARD_SIZE], int color)
+{
+    int dx=0 , dy=0;
+    printf("\n*************************************\n");
+    printf("Now, You can move your kept pieces.\nTotal number of own kept: %d\n",Players[color].own_kept);
+    printf("Please enter the corresponding abscissa \nof your own kept you want to place:\n");
+    printf("(Column number)\n");
+    scanf("%d", &dy);
+    printf("Please enter the corresponding ordinate \nof your own kept you want to place:\n");
+    printf("(Row number)\n");
+    scanf("%d", &dx);
+    // 1-8 on the command line board and 0-7 here, convert.
+    dx-=1;
+    dy-=1;
+
+    piece *top = NULL;
+    // Get target memory address.
+    top = get_Ptr_stack(&board[dx][dy],1,board[dx][dy].num_pieces);
+    board[dx][dy].stack = top;
+    // Link current stuck to target one.
+    piece * destination = top;
+    top = malloc(sizeof(piece));
+    top->p_color = color;
+    top->next = destination;
+    board[dx][dy].stack = top;
+    Players[color].own_kept --;
+    print_board(board);// Print current new board.
+    print_number_of_pieces(board);
 }

@@ -20,11 +20,9 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/main.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Focus" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Focus" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game_init.c" beforeDir="false" afterPath="$PROJECT_DIR$/game_init.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game_init.h" beforeDir="false" afterPath="$PROJECT_DIR$/game_init.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game_run.c" beforeDir="false" afterPath="$PROJECT_DIR$/game_run.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game_run.h" beforeDir="false" afterPath="$PROJECT_DIR$/game_run.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/input_output.c" beforeDir="false" afterPath="$PROJECT_DIR$/input_output.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_output.h" beforeDir="false" afterPath="$PROJECT_DIR$/input_output.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,6 +95,13 @@
       <workItem from="1587863939292" duration="39619000" />
       <workItem from="1587997483301" duration="14442000" />
       <workItem from="1588040316108" duration="31419000" />
+      <workItem from="1588103695862" duration="2593000" />
+      <workItem from="1588159792495" duration="280000" />
+      <workItem from="1588224964028" duration="68000" />
+      <workItem from="1588560908550" duration="6516000" />
+      <workItem from="1588570835734" duration="1970000" />
+      <workItem from="1588581336758" duration="16274000" />
+      <workItem from="1588601916966" duration="3245000" />
     </task>
     <task id="LOCAL-00001" summary="run">
       <created>1587460934980</created>
@@ -133,51 +138,51 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="303" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1587959502335" />
-    <state width="417" height="699" key="GridCell.Tab.0.bottom" timestamp="1588103138589">
+    <state width="380" height="771" key="GridCell.Tab.0.bottom" timestamp="1588605203775">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="417" height="699" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1588103138589" />
-    <state width="417" height="699" key="GridCell.Tab.0.center" timestamp="1588103138587">
+    <state width="380" height="771" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1588605203775" />
+    <state width="380" height="771" key="GridCell.Tab.0.center" timestamp="1588605203774">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="417" height="699" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1588103138587" />
-    <state width="417" height="699" key="GridCell.Tab.0.left" timestamp="1588103138587">
+    <state width="380" height="771" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1588605203774" />
+    <state width="380" height="771" key="GridCell.Tab.0.left" timestamp="1588605203774">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="417" height="699" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1588103138587" />
-    <state width="417" height="699" key="GridCell.Tab.0.right" timestamp="1588103138588">
+    <state width="380" height="771" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1588605203774" />
+    <state width="380" height="771" key="GridCell.Tab.0.right" timestamp="1588605203774">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="417" height="699" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1588103138588" />
-    <state width="417" height="699" key="GridCell.Tab.1.bottom" timestamp="1588103138590">
+    <state width="380" height="771" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1588605203774" />
+    <state width="182" height="771" key="GridCell.Tab.1.bottom" timestamp="1588605203768">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="417" height="699" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1588103138590" />
-    <state width="417" height="699" key="GridCell.Tab.1.center" timestamp="1588103138589">
+    <state width="182" height="771" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1588605203768" />
+    <state width="182" height="771" key="GridCell.Tab.1.center" timestamp="1588605203767">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="417" height="699" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1588103138589" />
-    <state width="417" height="699" key="GridCell.Tab.1.left" timestamp="1588103138589">
+    <state width="182" height="771" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1588605203767" />
+    <state width="182" height="771" key="GridCell.Tab.1.left" timestamp="1588605203767">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="417" height="699" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1588103138589" />
-    <state width="417" height="699" key="GridCell.Tab.1.right" timestamp="1588103138590">
+    <state width="182" height="771" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1588605203767" />
+    <state width="182" height="771" key="GridCell.Tab.1.right" timestamp="1588605203768">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="417" height="699" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1588103138590" />
+    <state width="182" height="771" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1588605203768" />
     <state x="479" y="168" key="RollbackChangesDialog" timestamp="1587999127545">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="479" y="168" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1587999127545" />
-    <state width="720" height="450" key="XDebugger.FullValuePopup" timestamp="1588046119744">
-      <screen x="0" y="23" width="1440" height="828" />
-    </state>
-    <state width="720" height="450" key="XDebugger.FullValuePopup/0.0.1440.900@0.0.1440.900" timestamp="1587978266584" />
-    <state width="720" height="450" key="XDebugger.FullValuePopup/0.23.1440.828@0.23.1440.828" timestamp="1588046119744" />
-    <state x="450" y="267" key="com.intellij.ide.util.TipDialog" timestamp="1588040316384">
+    <state width="720" height="450" key="XDebugger.FullValuePopup" timestamp="1588566077378">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="450" y="267" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1588040316384" />
+    <state width="720" height="450" key="XDebugger.FullValuePopup/0.0.1440.900@0.0.1440.900" timestamp="1588566077378" />
+    <state width="720" height="450" key="XDebugger.FullValuePopup/0.23.1440.828@0.23.1440.828" timestamp="1588046119744" />
+    <state x="450" y="267" key="com.intellij.ide.util.TipDialog" timestamp="1588601917335">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="450" y="267" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1588601917335" />
     <state x="425" y="234" key="com.intellij.ide.util.TipDialog/0.23.1360.711@0.23.1360.711" timestamp="1585246555157" />
     <state x="450" y="269" key="com.intellij.ide.util.TipDialog/0.23.1440.828@0.23.1440.828" timestamp="1586318537326" />
     <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587959528502">
@@ -188,16 +193,54 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="269" y="193" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1440.900@0.0.1440.900" timestamp="1587464521754" />
+    <state x="100" y="100" width="1240" height="700" key="dock-window-1" timestamp="1588601827588">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="100" y="100" width="1240" height="700" key="dock-window-1/0.0.1440.900@0.0.1440.900" timestamp="1588601827588" />
     <state x="385" y="210" key="run.anything.popup" timestamp="1587961506413">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="385" y="210" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1587961506413" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1588086232310">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1588604750556">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1588086232310" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1588604750556" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/game_run.c</url>
+          <line>484</line>
+          <option name="timeStamp" value="109" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/game_run.c</url>
+          <line>487</line>
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/game_run.c</url>
+          <line>490</line>
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/game_run.c</url>
+          <line>492</line>
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/game_run.c</url>
+          <line>489</line>
+          <option name="timeStamp" value="113" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/game_run.c</url>
+          <line>486</line>
+          <option name="timeStamp" value="114" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
         <watch expression="Exception" language="ObjectiveC" />
