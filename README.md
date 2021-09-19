@@ -8,7 +8,7 @@
 </div>
 
 ## About The Project
-This project is to design and implement a C language application to play the board game Focus/Domination. <br>
+This project is to design and implement a C language game called “Focus” which is a Command-Line 2D board game.
 
 Objective of each player is to make moves and capture pieces in such a manner that their opponent(s) have no moves remaining. 
 
@@ -35,6 +35,8 @@ cannot select any piece/stack to move, the other player wins the game.
 size of the stack. For example, if the size of the stack is 4, that stack can be moved to a position computed by moving the stack​ <up, up, left, right>​ or ​<down, down, down, left>​.
 
 3. When a stack grows over five pieces, pieces from the bottom of the stack are removed and kept by the current player, in order to bring the stack size back down to five pieces. Pieces of a player's own color that are kept by that player are reserved to re-enter the game at a later time, when the player cannot move any of his/her pieces or any stacks. Pieces of the opponent's color are kept as captured. Reserved pieces can be entered on a turn in any space on the board in place of making a move of pieces.
+
+Please read this [instruction pdf](https://github.com/LewisZhang-01/Focus-Game/blob/master/Focus:Domination_Board_Game%20Instruction.pdf) file.
 
 Also this video ​https://www.youtube.com/watch?v=zRIChfOqu4M​ clearly explains the rules of the game.
 
