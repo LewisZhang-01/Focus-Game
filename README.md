@@ -1,5 +1,6 @@
 # Focus/Domination Board Game
 <div align="center">    
+   <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Focus_2.jpg" width = 450 height = 450>
    
   <br>[![](https://img.shields.io/badge/author-ZhiZhang-red "author")](https://github.com/LewisZhang-01/)
   ![](https://img.shields.io/badge/dynamic/json?label=GitHub%20Followers&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3DLewisZhang-01&labelColor=282c34&color=181717&logo=github&longCache=true "followers")
@@ -14,6 +15,9 @@ Objective of each player is to make moves and capture pieces in such a manner th
 More details on the rules of the game can be found here on the [Wikipedia website](https://en.wikipedia.org/wiki/Focus_(board_game)).
 
 ## Preset & Usage
+<div align="center">   
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Focus_01.svg" width = 450 height = 450>
+</div>
 We assume that the game can only be played by two players. Each player is associated with a colour (e.g., red and green).
 
 Each player has 18 tokens that are initially placed on a checkboard with the three squares in each corner removed, thus forming a 6×6 board with 1×4 extensions on each side (see image on the left).
@@ -41,8 +45,8 @@ Also this video ​https://www.youtube.com/watch?v=zRIChfOqu4M​ clearly explai
   * Stacks (preferably implemented as linked lists)
 
 ## Author info
-Author Name: Zhi Zhang 
-
+Author Name: Zhi Zhang  
+   
 Email - [@Zhi](lewiszhang01@gmail.com) - lewiszhang01@gmail.com
 
 Project Link: [https://github.com/LewisZhang-01/Focus-Game](https://github.com/LewisZhang-01/Focus-Game)
